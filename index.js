@@ -19,7 +19,6 @@ btn.addEventListener("click", function () {
 //functionality of delete button
 //Event Delegation
 ul.addEventListener("click", function (event) {
-  // console.log(event.target.nodeName);
   if ((event.target.nodeName = "BUTTON")) {
     let listItem = event.target.parentElement;
     listItem.remove();
