@@ -17,6 +17,13 @@ btn.addEventListener("click", function () {
   el.appendChild(renBtn);
 });
 //functionality of delete button
-deleteButton.addEventListener("click", function () {
-  ul.parentNode.remove();
+//Event Delegation
+ul.addEventListener("click", function (event) {
+  // console.log(event.target.nodeName);
+  if ((event.target.nodeName = "BUTTON")) {
+    let listItem = event.target.parentElement;
+    listItem.remove();
+  } else {
+    console.log("Error deleting a listItem");
+  }
 });
