@@ -12,7 +12,7 @@ btn.addEventListener("click", function () {
   inp.value = "";
   // creating delete button
   const renBtn = document.createElement("button");
-  const deleteButton = renBtn.classList.add("delBtn");
+  /*const deleteButton =*/ renBtn.classList.add("delBtn");
   renBtn.innerText = "Delete";
   el.appendChild(renBtn);
 });
