@@ -19,7 +19,7 @@ btn.addEventListener("click", function () {
 //functionality of delete button
 //Event Delegation
 ul.addEventListener("click", function (event) {
-  if ((event.target.nodeName = "BUTTON")) {
+  if (event.target.nodeName == "BUTTON") {
     let listItem = event.target.parentElement;
     listItem.remove();
   } else {
